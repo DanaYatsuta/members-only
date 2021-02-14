@@ -1,3 +1,59 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: cadetblue;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar-item {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  color: white;
+  
+}
+
+.navbar-item:hover {
+  background-color: rgb(71, 122, 124);
+}
+
+.feed {
+  margin: 16px;
+  flex-direction: vertical;
+  width: fit-content;
+}
+
+.feed a {
+  text-decoration: none;
+}
+
+.post {
+  width: 15em;
+  height: 10em;
+
+  overflow: hidden;
+
+  padding: 16px;
+  margin: 16px;
+
+  background-color: rgb(123, 196, 199);
+  color: rgb(43, 43, 43);
+
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #4b4b4b;
+
+  transition: transform 0.5s;
+}
+
+.post:hover {
+  transform: scale(1.1, 1.1)
+}
